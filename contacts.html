@@ -316,10 +316,10 @@
               </div>
             </div>
             <div class="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-              <form class="needs-validation" novalidate>
+              <form  onsubmit="sendMail(event)" class="needs-validation"  novalidate>
                 <div class="row g-4">
                   <div class="col-sm-6">
-                    <label for="fn" class="form-label fs-base">Full name</label>
+                    <label for="name"  class="form-label fs-base">Full name</label>
                     <input type="text" class="form-control form-control-lg" id="fn" required>
                     <div class="invalid-feedback">Please enter your full name!</div>
                   </div>
@@ -342,6 +342,24 @@
           </div>
         </div>
       </section>
+
+      <script>
+        function sendMail(event) {
+          event.preventDefault(); 
+          // Retrieve form data
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+          // Construct the mailto link with subject and body
+          const mailtoLink = `mailto:sureshv@kelved.com?subject=Inquiry&body=Name: ${encodeURIComponent(
+            name
+          )}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(
+            message
+          )}`;
+          // Open the user's default mail client with the populated mailto link
+          window.location.href = mailtoLink;
+        }
+      </script>
     </main>
 
 
