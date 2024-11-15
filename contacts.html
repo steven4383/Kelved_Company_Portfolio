@@ -1,173 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Kelved</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+<head>
+  <meta charset="utf-8" />
+  <title>Kelved</title>
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template" />
+  <meta name="keywords"
+    content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative" />
+  <meta name="author" content="Createx Studio" />
 
-    <!-- Favicon and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/kelvedFavicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/kelvedFavicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/kelvedFavicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/kelvedFavicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/kelvedFavicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="assets/favicon/kelvedFavicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#080032">
-    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Vendor Styles -->
-    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+  <!-- Favicon and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/kelvedFavicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/kelvedFavicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/kelvedFavicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon/kelvedFavicon/site.webmanifest" />
+  <link rel="mask-icon" href="assets/favicon/kelvedFavicon/safari-pinned-tab.svg" color="#6366f1" />
+  <link rel="shortcut icon" href="assets/favicon/kelvedFavicon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#080032" />
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Main Theme Styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css" />
 
-    <!-- Page loading styles -->
-    <style>
-      .page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      .dark-mode .page-loading {
-        background-color: #0b0f19;
-      }
-      .page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-        opacity: 1;
-      }
-      .page-loading-inner > span {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #9397ad;
-      }
-      .dark-mode .page-loading-inner > span {
-        color: #fff;
-        opacity: .6;
-      }
-      .page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        border: .15em solid #b4b7c9;
-        border-right-color: transparent;
-        border-radius: 50%;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      .dark-mode .page-spinner {
-        border-color: rgba(255,255,255,.4);
-        border-right-color: transparent;
-      }
-      @-webkit-keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-    </style>
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css" />
 
-    <!-- Theme mode -->
-    <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== null && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
+  <!-- Page loading styles -->
+  <style>
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.4s 0.2s ease-in-out;
+      transition: all 0.4s 0.2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .dark-mode .page-loading {
+      background-color: #0b0f19;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #9397ad;
+    }
+
+    .dark-mode .page-loading-inner>span {
+      color: #fff;
+      opacity: 0.6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: 0.75rem;
+      vertical-align: text-bottom;
+      border: 0.15em solid #b4b7c9;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner 0.75s linear infinite;
+      animation: spinner 0.75s linear infinite;
+    }
+
+    .dark-mode .page-spinner {
+      border-color: rgba(255, 255, 255, 0.4);
+      border-right-color: transparent;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
-    </script>
+    }
 
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
-    </script>
-  </head>
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 
+  <!-- Theme mode -->
+  <script>
+    let mode = window.localStorage.getItem("mode"),
+      root = document.getElementsByTagName("html")[0];
+    if (mode !== null && mode === "dark") {
+      root.classList.add("dark-mode");
+    } else {
+      root.classList.remove("dark-mode");
+    }
+  </script>
 
-  <!-- Body -->
-  <body>
-    
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
-      </div>
+  <!-- Page loading scripts -->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector(".page-loading");
+        preloader.classList.remove("active");
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+</head>
+
+<!-- Body -->
+
+<body>
+  <!-- Page loading spinner -->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div>
+      <span>Loading...</span>
     </div>
+  </div>
 
-
-    <!-- Page wrapper for sticky footer -->
-    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
-    <main class="page-wrapper">
-
-
- <!-- Navbar -->
-      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
-        <div class="container px-3">
-          <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/kelvedLogo.png" width="47" alt="Silicon">
-            Kelved
-          </a>
-          <div id="navbarNav" class="offcanvas offcanvas-end">
-            <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                  <a href="index.html" class="nav-link" aria-current="page">Home</a>
-                  <!-- <div class="dropdown-menu p-0">
+  <!-- Page wrapper for sticky footer -->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="page-wrapper">
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+      <div class="container px-3">
+        <a href="index.html" class="navbar-brand pe-3">
+          <img src="assets/img/kelvedLogo.png" width="47" alt="Silicon" />
+          Kelved
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                <!-- <div class="dropdown-menu p-0">
                     <div class="d-lg-flex">
                       <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
                       <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
@@ -195,10 +204,10 @@
                       </div>
                     </div>
                   </div> -->
-                </li>
-                <li class="nav-item">
-                  <a href="about.html" class="nav-link">About</a>
-                  <!-- <div class="dropdown-menu">
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+                <!-- <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
                         <h6 class="px-3 mb-2">About</h6>
@@ -255,221 +264,210 @@
                       </div>
                     </div>
                   </div> -->
-                </li>
-                <li class="nav-item">
-                  <a href="services.html" class="nav-link">Services</a>
-            
-                </li>
-                <li class="nav-item">
-                  <a href="contacts.html" class="nav-link active">Contact</a>
-                </li>
-                <!-- <li class="nav-item">
+              </li>
+              <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacts.html" class="nav-link active">Contact</a>
+              </li>
+              <!-- <li class="nav-item">
                   <a href="docs/getting-started.html" class="nav-link">Docs</a>
                 </li> -->
-              </ul>
-            </div>
-            <div class="offcanvas-header border-top">
-              <!-- <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            </ul>
+          </div>
+          <div class="offcanvas-header border-top">
+            <!-- <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
                 <i class="bx bx-cart fs-4 lh-1 me-1"></i>
                 &nbsp;Buy now
               </a> -->
-            </div>      
           </div>
-          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <input type="checkbox" class="form-check-input" id="theme-mode">
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-          </div>
-          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+        </div>
+        <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+          <input type="checkbox" class="form-check-input" id="theme-mode" />
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
             <i class="bx bx-cart fs-5 lh-1 me-1"></i>
             &nbsp;Buy now
           </a> -->
-        </div>
-      </header>
+      </div>
+    </header>
 
+    <!-- Page content -->
+    <section class="bg-size-cover bg-position-bottom-center bg-repeat-0 py-5"
+      style="background-image: url(assets/img/contacts/bg.svg)">
+      <div class="container pt-5 pb-lg-4 pb-xl-5">
+        <!-- Breadcrumb -->
+        <nav class="pt-lg-4" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contacts
+            </li>
+          </ol>
+        </nav>
 
-
-      <!-- Page content -->
-      <section class="bg-size-cover bg-position-bottom-center bg-repeat-0 py-5" style="background-image: url(assets/img/contacts/bg.svg);">
-        <div class="container pt-5 pb-lg-4 pb-xl-5">
-
-          <!-- Breadcrumb -->
-          <nav class="pt-lg-4" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item">
-                <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">Contacts</li>
-            </ol>
-          </nav>
-
-          <div class="row pt-md-2 pt-lg-5 pb-2 pb-md-4">
-            <div class="col-xxl-4 col-xl-5 col-lg-6 pt-3 mt-3">
-              <h1 class="h3 mb-2">Want to work with us?</h1>
-              <h2 class="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">Let's talk!</h2>
-              <div class="nav d-block lead pt-lg-5">
-                <a href="#" class="nav-link fw-normal text-decoration-underline p-0 mb-4">sureshv@kelved.com</a>
-                <div class="text-nav">+1 406 555-0120</div>
-              </div>
-            </div>
-            <div class="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-              <form  onsubmit="sendMail(event)" class="needs-validation"  novalidate>
-                <div class="row g-4">
-                  <div class="col-sm-6">
-                    <label for="name"  class="form-label fs-base">Full name</label>
-                    <input type="text" class="form-control form-control-lg" id="fn" required>
-                    <div class="invalid-feedback">Please enter your full name!</div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="email" class="form-label fs-base">Email</label>
-                    <input type="email" class="form-control form-control-lg" id="email" required>
-                    <div class="invalid-feedback">Please provide a valid email address!</div>
-                  </div>
-                  <div class="col-12 pb-2">
-                    <label for="message" class="form-label fs-base">Message</label>
-                    <textarea class="form-control form-control-lg" id="message" rows="3" required></textarea>
-                    <div class="invalid-feedback">Please provide a valid email address!</div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Contact Us</button>
-                  </div>
-                </div>
-              </form>
+        <div class="row pt-md-2 pt-lg-5 pb-2 pb-md-4">
+          <div class="col-xxl-4 col-xl-5 col-lg-6 pt-3 mt-3">
+            <h1 class="h3 mb-2">Want to work with us?</h1>
+            <h2 class="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">
+              Let's talk!
+            </h2>
+            <div class="nav d-block lead pt-lg-5">
+              <a href="#" class="nav-link fw-normal text-decoration-underline p-0 mb-4">sureshv@kelved.com</a>
+              <div class="text-nav">+1 (732) 208-0842</div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <script>
-        function sendMail(event) {
-          event.preventDefault(); 
-          // Retrieve form data
-          const name = document.getElementById('name').value;
-          const email = document.getElementById('email').value;
-          const message = document.getElementById('message').value;
-          // Construct the mailto link with subject and body
-          const mailtoLink = `mailto:sureshv@kelved.com?subject=Inquiry&body=Name: ${encodeURIComponent(
-            name
-          )}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(
-            message
-          )}`;
-          // Open the user's default mail client with the populated mailto link
-          window.location.href = mailtoLink;
-        }
-      </script>
-    </main>
-
-
-    <footer
-      class="footer dark-mode bg-dark border-top border-light pt-5 pb-4 pb-lg-5"
-    >
-      <div class="container pt-xl-4">
-        <div class="row pb-5">
-          <div class="col-lg-4 col-md-6">
-            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-              <img src="assets/img/kelvedLogo.png" width="47" alt="Kelved" />
-              Kelved
-            </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">
-              We deliver innovative solutions across various domains in Information
-              Technology Enabled Services, including Voice and Non-Voice, Data
-              Processing, Data Conversion, Business Process Outsourcing, and Back
-              Office Support
-            </p>
-            <form class="needs-validation" novalidate>
-              <label for="subscr-email" class="form-label"
-                >Subscribe to our newsletter</label
-              >
-              <div class="input-group">
-                <input
-                  type="email"
-                  id="subscr-email"
-                  class="form-control rounded-start ps-5"
-                  placeholder="Your email"
-                  required
-                />
-                <i
-                  class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"
-                ></i>
-                <div class="invalid-tooltip position-absolute top-100 start-0">
-                  Please provide a valid email address.
+          <div class="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
+            <form id="form" onsubmit="sendMail(event)" class="needs-validation" novalidate>
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <label for="name" class="form-label fs-base">Full name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" name="name" required />
+                  <div class="invalid-feedback">
+                    Please enter your full name!
+                  </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <div class="col-sm-6">
+                  <label for="email" class="form-label fs-base">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" name="email" required />
+                  <div class="invalid-feedback">
+                    Please provide a valid email address!
+                  </div>
+                </div>
+                <div class="col-12 pb-2">
+                  <label for="message" class="form-label fs-base">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" name="message" rows="3"
+                    required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter your message!
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto" id="button">
+                    Contact Us
+                  </button>
+                </div>
               </div>
             </form>
           </div>
-          <div
-            class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0"
-          >
-            <div id="footer-links" class="row">
-              <div class="col-lg-4">
-                <h6 class="mb-2">
-                  <a
-                    href="#useful-links"
-                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                    data-bs-toggle="collapse"
-                    >Useful Links</a
-                  >
-                </h6>
-                <div
-                  id="useful-links"
-                  class="collapse d-lg-block"
-                  data-bs-parent="#footer-links"
-                >
-                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Services</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Case Studies</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >About Us</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >News &amp; Insights</a
-                      >
-                    </li>
-                  </ul>
-                  <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Terms &amp; Conditions</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Privacy Policy</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      (function () {
+        emailjs.init("W_rLgsDS5RHrP6guC");
+      })();
+
+      function sendMail(event) {
+        event.preventDefault();
+        const form = event.target;
+
+        emailjs.sendForm("service_l8z58zq", "template_60ed29l", form).then(
+          () => {
+            Swal.fire({
+              icon: "success",
+              title: "Email sent!",
+              text: "Your message was successfully sent.",
+              timer: 3000,
+              showConfirmButton: false,
+            });
+            form.reset();
+          },
+          (error) => {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Failed to send email. Please try again later.",
+              timer: 3000,
+              showConfirmButton: false,
+            });
+          }
+        );
+      }
+    </script>
+  </main>
+
+  <footer class="footer dark-mode bg-dark border-top border-light pt-5 pb-4 pb-lg-5">
+    <div class="container pt-xl-4">
+      <div class="row pb-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+            <img src="assets/img/kelvedLogo.png" width="47" alt="Kelved" />
+            Kelved
+          </div>
+          <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">
+            We deliver innovative solutions across various domains in
+            Information Technology Enabled Services, including Voice and
+            Non-Voice, Data Processing, Data Conversion, Business Process
+            Outsourcing, and Back Office Support
+          </p>
+          <form class="needs-validation" novalidate>
+            <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+            <div class="input-group">
+              <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email"
+                required />
+              <i
+                class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <div class="invalid-tooltip position-absolute top-100 start-0">
+                Please provide a valid email address.
               </div>
-              <div class="col-xl-4 col-lg-3">
-                <h6 class="mb-2">
-                  <a
-                    href="#social-links"
-                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                    data-bs-toggle="collapse"
-                    >Socials</a
-                  >
-                </h6>
-                <!-- <div
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+          <div id="footer-links" class="row">
+            <div class="col-lg-4">
+              <h6 class="mb-2">
+                <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                  data-bs-toggle="collapse">Useful Links</a>
+              </h6>
+              <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Case Studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Insights</a>
+                  </li>
+                </ul>
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-3">
+              <h6 class="mb-2">
+                <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                  data-bs-toggle="collapse">Socials</a>
+              </h6>
+              <!-- <div
                   id="social-links"
                   class="collapse d-lg-block"
                   data-bs-parent="#footer-links"
@@ -497,45 +495,34 @@
                     </li>
                   </ul>
                 </div> -->
-              </div>
-              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
-                <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:sureshv@kelved.com" class="fw-medium"
-                  >sureshv@kelved.com</a
-                >
-              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+              <h6 class="mb-2">Contact Us</h6>
+              <a href="mailto:sureshv@kelved.com" class="fw-medium">sureshv@kelved.com</a>
             </div>
           </div>
         </div>
-        <p
-          class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0"
-        >
-          <span class="text-light opacity-50"
-            >&copy; All rights reserved. Made by 
-          </span>
-          <a
-            class="nav-link d-inline-block p-0"
-            href="index.html"
-            target="_self"
-            rel="noopener"
-            >Kelved</a
-          >
-        </p>
       </div>
-    </footer>
+      <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+        <span class="text-light opacity-50">&copy; All rights reserved. Made by
+        </span>
+        <a class="nav-link d-inline-block p-0" href="index.html" target="_self" rel="noopener">Kelved</a>
+      </p>
+    </div>
+  </footer>
 
-    <!-- Back to top button -->
-    <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-    </a>
+  <!-- Back to top button -->
+  <a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+  </a>
 
+  <!-- Vendor Scripts -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <!-- Vendor Scripts -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <!-- Main Theme Script -->
+  <script src="assets/js/theme.min.js"></script>
+</body>
 
-    <!-- Main Theme Script -->
-    <script src="assets/js/theme.min.js"></script>
-  </body>
 </html>
